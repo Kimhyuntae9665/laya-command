@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+runtime/
+models/
+hf-cache/
+work/
+*.gguf
+*.safetensors
+*.bin
+*.dll
+*.exe
+*.zip
+.env
+*.credential.xml
+

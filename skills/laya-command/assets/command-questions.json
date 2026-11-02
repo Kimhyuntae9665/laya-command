@@ -1,0 +1,12 @@
+{
+  "request_type": {
+    "type": "choice",
+    "instructions": "What kind of work does the user explicitly request? Classify the requested work, not whether you approve it. If references cannot be resolved, choose unclear.",
+    "criteria": {
+      "information": "Only inspect, search, list, explain or analyze information; do not create or modify artifacts or settings.",
+      "change": "Create, edit, install, execute or otherwise change an artifact, program or setting.",
+      "mixed": "Explicitly request both information gathering or analysis and a separate creation or change.",
+      "unclear": "The requested work or its target is too ambiguous to determine from the text."
+    }
+  }
+}

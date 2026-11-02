@@ -1,0 +1,6 @@
+interface:
+  display_name: "한국어 명령 + Laya"
+  short_description: "한국어 지시를 로컬 번역하고 Laya로 판단한 뒤 요청한 작업을 이어갑니다"
+  default_prompt: "Use $laya-command to translate my Korean command locally, review its meaning, run Laya, and carry out my request."
+policy:
+  allow_implicit_invocation: true

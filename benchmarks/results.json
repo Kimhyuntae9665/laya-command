@@ -1,0 +1,245 @@
+{
+  "date": "2026-11-02",
+  "device": "cpu",
+  "threads": 6,
+  "hardware": {
+    "cpu": "Intel Core Ultra 5 225H",
+    "ram_gib": 15.53,
+    "gpu_used": false
+  },
+  "versions": {
+    "laya": "0.4.21",
+    "torch": "2.15.0+cpu"
+  },
+  "import_seconds": 9.527067099930719,
+  "load_seconds": 14.69143060001079,
+  "warnings": [
+    "laya: this checkpoint ships invalid temperatures or values outside [0.5, 5]; using choice:11+=0.10058280825614929 -> 0.5. Treat confidence from the affected entries as uncalibrated."
+  ],
+  "translation_seconds": [
+    17.77,
+    8.47,
+    7.52,
+    11.05
+  ],
+  "inference_median_seconds": 0.8785300000454299,
+  "matches": 2,
+  "count": 4,
+  "items": [
+    {
+      "id": "list_only",
+      "source_ko": "현재 폴더의 파일 이름 목록만 보여줘. 파일을 삭제하거나 수정하지 마.",
+      "expected": "information",
+      "translation": {
+        "source_ko": "현재 폴더의 파일 이름 목록만 보여줘. 파일을 삭제하거나 수정하지 마.",
+        "context": "",
+        "english": "Show only the list of file names in the current folder. Do not delete or modify any files.",
+        "raw_model_english": "Show only the list of file names in the current folder. Do not delete or modify any files.",
+        "constraint_repairs": [],
+        "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M",
+        "device": "cpu",
+        "elapsed_seconds": 17.77,
+        "protected_values": [],
+        "warnings": [],
+        "semantic_review_required": true
+      },
+      "laya": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "request_type": {
+            "type": "choice",
+            "choice": "information",
+            "probabilities": {
+              "information": 0.388,
+              "change": 0.1529,
+              "mixed": 0.2055,
+              "unclear": 0.2536
+            },
+            "confidence": 0.0424,
+            "answer_confidence": 0.388,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 139,
+          "output_tokens": 0,
+          "state_tokens": 20,
+          "state_tokens_dropped": 0,
+          "truncated": false,
+          "truncated_questions": []
+        }
+      },
+      "latency_seconds": [
+        1.143823399906978,
+        0.8806353000691161,
+        0.9174442000221461
+      ],
+      "matches_expected": true
+    },
+    {
+      "id": "create_readme",
+      "source_ko": "이 프로젝트의 사용방법을 설명하는 README 파일을 새로 만들어줘.",
+      "expected": "change",
+      "translation": {
+        "source_ko": "이 프로젝트의 사용방법을 설명하는 README 파일을 새로 만들어줘.",
+        "context": "",
+        "english": "Create a new README file that explains how to use this project.",
+        "raw_model_english": "Create a new README file that explains how to use this project.",
+        "constraint_repairs": [],
+        "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M",
+        "device": "cpu",
+        "elapsed_seconds": 8.47,
+        "protected_values": [],
+        "warnings": [],
+        "semantic_review_required": true
+      },
+      "laya": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "request_type": {
+            "type": "choice",
+            "choice": "information",
+            "probabilities": {
+              "information": 0.3309,
+              "change": 0.195,
+              "mixed": 0.2036,
+              "unclear": 0.2704
+            },
+            "confidence": 0.0172,
+            "answer_confidence": 0.3309,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 133,
+          "output_tokens": 0,
+          "state_tokens": 14,
+          "state_tokens_dropped": 0,
+          "truncated": false,
+          "truncated_questions": []
+        }
+      },
+      "latency_seconds": [
+        0.8764247000217438,
+        0.8502792000072077,
+        0.8663235999410972
+      ],
+      "matches_expected": false
+    },
+    {
+      "id": "publish_request",
+      "source_ko": "이 스킬을 GitHub 저장소에 올려줘. 사용방법과 성능을 자세하게 README에 작성해줘.",
+      "expected": "change",
+      "translation": {
+        "source_ko": "이 스킬을 GitHub 저장소에 올려줘. 사용방법과 성능을 자세하게 README에 작성해줘.",
+        "context": "",
+        "english": "Upload this skill to a GitHub repository. Write a detailed README file explaining its usage and performance.",
+        "raw_model_english": "Upload this skill to a GitHub repository. Write a detailed README file explaining its usage and performance.",
+        "constraint_repairs": [],
+        "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M",
+        "device": "cpu",
+        "elapsed_seconds": 7.52,
+        "protected_values": [],
+        "warnings": [],
+        "semantic_review_required": true
+      },
+      "laya": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "request_type": {
+            "type": "choice",
+            "choice": "information",
+            "probabilities": {
+              "information": 0.3139,
+              "change": 0.2172,
+              "mixed": 0.2285,
+              "unclear": 0.2405
+            },
+            "confidence": 0.0079,
+            "answer_confidence": 0.3139,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 139,
+          "output_tokens": 0,
+          "state_tokens": 20,
+          "state_tokens_dropped": 0,
+          "truncated": false,
+          "truncated_questions": []
+        }
+      },
+      "latency_seconds": [
+        0.9170183999231085,
+        0.8970919999992475,
+        0.9141282000346109
+      ],
+      "matches_expected": false
+    },
+    {
+      "id": "unresolved_reference",
+      "source_ko": "그거 해줘.",
+      "expected": "unclear",
+      "translation": {
+        "source_ko": "그거 해줘.",
+        "context": "",
+        "english": "Do that for me.",
+        "raw_model_english": "Do that for me.",
+        "constraint_repairs": [],
+        "model": "unsloth/Qwen3-4B-Instruct-2507-GGUF:Q4_K_M",
+        "device": "cpu",
+        "elapsed_seconds": 11.05,
+        "protected_values": [],
+        "warnings": [],
+        "semantic_review_required": true
+      },
+      "laya": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "request_type": {
+            "type": "choice",
+            "choice": "unclear",
+            "probabilities": {
+              "information": 0.2927,
+              "change": 0.1484,
+              "mixed": 0.2084,
+              "unclear": 0.3505
+            },
+            "confidence": 0.0355,
+            "answer_confidence": 0.3505,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 124,
+          "output_tokens": 0,
+          "state_tokens": 5,
+          "state_tokens_dropped": 0,
+          "truncated": false,
+          "truncated_questions": []
+        }
+      },
+      "latency_seconds": [
+        0.8344416000181809,
+        0.8224365999922156,
+        0.8225517999380827
+      ],
+      "matches_expected": true
+    }
+  ],
+  "limitations": [
+    "Four synthetic cases selected by the author; no held-out evaluation.",
+    "Translations reviewed by Codex, not an independent bilingual annotator.",
+    "Three sequential Laya calls per case; one process; includes first inference.",
+    "Peak memory and end-to-end Codex review time not measured.",
+    "Model scores are not verified probabilities of correctness."
+  ]
+}

@@ -1,0 +1,6 @@
+[
+  {"id":"list_only","source_ko":"현재 폴더의 파일 이름 목록만 보여줘. 파일을 삭제하거나 수정하지 마.","expected":"information"},
+  {"id":"create_readme","source_ko":"이 프로젝트의 사용방법을 설명하는 README 파일을 새로 만들어줘.","expected":"change"},
+  {"id":"publish_request","source_ko":"이 스킬을 GitHub 저장소에 올려줘. 사용방법과 성능을 자세하게 README에 작성해줘.","expected":"change"},
+  {"id":"unresolved_reference","source_ko":"그거 해줘.","expected":"unclear"}
+]

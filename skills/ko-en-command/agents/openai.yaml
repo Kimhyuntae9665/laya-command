@@ -1,0 +1,4 @@
+interface:
+  display_name: "한국어 명령 → 영어"
+  short_description: "로컬 모델로 한국어 명령을 영어로 번역하고 조건·부정·경로를 대조합니다"
+  default_prompt: "Use $ko-en-command to translate my Korean instruction into English for Laya while preserving context and constraints."
